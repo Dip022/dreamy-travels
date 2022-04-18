@@ -25,7 +25,7 @@ const Checkout = () => {
       <ToastContainer></ToastContainer>
       <h1 className="mt-5 text-center">Booking</h1>
       <div className="checkout-container">
-        <div>
+        <div className="col-lg-8 checkout-info">
           <img src={checkoutEvent?.image} alt="" />
           <h3>{checkoutEvent?.name}</h3>
           <h4>

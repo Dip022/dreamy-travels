@@ -13,3 +13,10 @@
   background-color: #0d6efd;
   color: #fff;
 }
+
+/* responsive tablet */
+@media screen and (max-width: 991px) {
+  .singOut {
+    display: inherit;
+  }
+}
