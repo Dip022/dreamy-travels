@@ -8,3 +8,8 @@
 .navbar-dark .navbar-toggler {
   color: #fff;
 }
+.singOut {
+  border: none;
+  background-color: #0d6efd;
+  color: #fff;
+}

@@ -6,7 +6,7 @@ const Places = ({ service }) => {
   const { id, name, image, price, description } = service;
   const naviget = useNavigate();
   const ServicesDetail = (id) => {
-    naviget(`/service/${id}`);
+    naviget(`/checkout/${id}`);
   };
   return (
     <div className="places-container">
