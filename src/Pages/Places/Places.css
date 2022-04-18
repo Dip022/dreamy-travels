@@ -1,5 +1,4 @@
 .places-container {
-  border: 1px solid lightgray;
   margin-right: 20px;
   margin-bottom: 20px;
   border-radius: 5px;
@@ -13,7 +12,7 @@
 }
 .places-info {
   padding: 10px;
-  margin-bottom: all 40px;
+  margin-bottom: 40px;
 }
 .places-img {
   width: 100%;
