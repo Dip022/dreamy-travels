@@ -1,0 +1,20 @@
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 50px;
+}
+
+/* responsive tablet */
+
+@media screen and (max-width: 768px) {
+  .services-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* responsive mobile */
+@media screen and (max-width: 425px) {
+  .services-container {
+    display: inline-block;
+  }
+}

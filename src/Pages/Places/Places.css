@@ -1,0 +1,35 @@
+.places-container {
+  border: 1px solid lightgray;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+.places-info {
+  padding: 10px;
+  margin-bottom: 40px;
+}
+.places-img {
+  width: 100%;
+  border-radius: 5px;
+}
+.places-info h5 {
+  margin-top: 20px;
+}
+.places-container button {
+  width: 100%;
+  border: none;
+  position: absolute;
+  bottom: 0;
+  padding: 8px;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 0 0 4px 4px;
+  background-color: #0d6efd;
+}
+/* responsive mobile */
+@media screen and (max-width: 425px) {
+  .places-container {
+    margin-right: 0px;
+  }
+}

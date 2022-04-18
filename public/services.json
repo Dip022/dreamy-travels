@@ -1,20 +1,20 @@
 [
   {
-    "id" : 1,
+    "id": 1,
     "name": "The Lava Tunnel - Standard Lava Tunnel Tour - Raufarhólshellir",
     "image": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/06/6c/55/52.jpg",
     "price": 59,
     "description": "Inside the cave, you will be fascinated to see a very beautiful pull. It is a pillar of light inside a mountain cave."
   },
   {
-    "id" : 2,
+    "id": 2,
     "name": "Cappadocia Hot Air Balloon Flight",
     "image": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0b/3c/c0/4e.jpg",
     "price": 110,
     "description": "Air balloon flight is a very beautiful journey in which you will be shown the beauty of a mountain. It will inspire you a lot to the beauty of the mountains."
   },
   {
-    "id" : 3,
+    "id": 3,
     "name": "Surf Lessons with Pro Team in Jacó",
     "image": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/86/28/8e.jpg",
     "price": 77,
