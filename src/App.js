@@ -10,6 +10,7 @@ import Footer from "./Shared/Footer/Footer";
 import Header from "./Shared/Header/Header";
 import RequireAuth from "./Pages/Logins/RequireAuth/RequireAuth";
 import Checkout from "./Pages/Checkout/Checkout";
+import NotFound from "./Pages/NotFound/NotFound";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         ></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
