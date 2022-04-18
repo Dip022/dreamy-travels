@@ -15,4 +15,8 @@ Click here to create private repo: [https://github.com/programming-hero-web-cour
 
 # use framework
 
--HTML - Custom css - react js - firebase - bootstrap 5 - react bootstrap - react-router
+- react js
+- firebase
+- bootstrap 5
+- react bootstrap
+- react-router
