@@ -4,7 +4,11 @@
   padding: 10px;
   border-radius: 5px;
 }
-
+.forgot-pass {
+  background-color: #fff;
+  color: rgb(221, 66, 66);
+  border: none;
+}
 /* responsive mobile */
 @media screen and (max-width: 425px) {
   .user-container {

@@ -15,7 +15,7 @@ const Register = () => {
   const [passError, setPassError] = useState("");
 
   const [createUserWithEmailAndPassword, user, loading, error] =
-    useCreateUserWithEmailAndPassword(auth);
+    useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
   const navigate = useNavigate();
   if (loading) {
@@ -84,7 +84,9 @@ const Register = () => {
               />
             </Form.Group>
             <p>{error?.message}</p>
-            <span className="text-danger">{passError}</span>
+            <span className="text-danger text-center mt-4 mb-2">
+              {passError}
+            </span>
             <Button className="w-100" variant="primary" type="submit">
               Submit
             </Button>
