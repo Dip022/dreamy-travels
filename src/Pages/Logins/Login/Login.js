@@ -2,19 +2,29 @@ import React, { useRef } from "react";
 import { Button } from "react-bootstrap";
 import { Container, Form } from "react-bootstrap";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
+import Loading from "../../Loading/Loading";
+import SocialLogin from "../SocialLogin/SocialLogin";
 import "./Login.css";
 
 const Login = () => {
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
+
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  let from = location.state?.from?.pathname || "/";
+
+  if (user) {
+    navigate(from, { replace: true });
+  }
   const emailRef = useRef("");
   const passRef = useRef("");
 
-  const navigetRegister = useNavigate();
-  if (user) {
-    navigetRegister("/checkout");
+  if (loading) {
+    return <Loading></Loading>;
   }
 
   const handelLogin = (event) => {
@@ -25,9 +35,6 @@ const Login = () => {
     signInWithEmailAndPassword(email, password);
   };
 
-  const registerNaviget = () => {
-    navigetRegister("/register");
-  };
   return (
     <Container className="mt-5">
       <div className="user-container w-50 mx-auto">
@@ -60,14 +67,11 @@ const Login = () => {
 
         <p className="mt-4 ">
           No account yet?{" "}
-          <Link
-            to="/register"
-            className="text-primary text-decoration-none"
-            onClick={registerNaviget}
-          >
+          <Link to="/register" className="text-primary text-decoration-none">
             Register
           </Link>
         </p>
+        <SocialLogin></SocialLogin>
       </div>
     </Container>
   );

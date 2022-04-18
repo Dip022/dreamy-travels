@@ -21,7 +21,14 @@ function App() {
         <Route path="/services" element={<Services></Services>}></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
-        <Route path="/checkout" element={<Checkout></Checkout>}></Route>
+        <Route
+          path="/checkout"
+          element={
+            <RequireAuth>
+              <Checkout></Checkout>
+            </RequireAuth>
+          }
+        ></Route>
         <Route
           path="/checkout/:checkoutId"
           element={
