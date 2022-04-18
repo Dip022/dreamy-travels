@@ -1,0 +1,13 @@
+.login-container {
+  margin-bottom: 50px;
+  border: 1px solid lightgray;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* responsive mobile */
+@media screen and (max-width: 425px) {
+  .login-container {
+    width: 100% !important;
+  }
+}

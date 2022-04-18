@@ -2,9 +2,10 @@ import { Route, Routes } from "react-router";
 import "./App.css";
 import About from "./Pages/About/About";
 import Blog from "./Pages/Blog/Blog";
+import ServicesDetail from "./Pages/ServicesDetail/ServicesDetail";
 import Home from "./Pages/Home/Home";
 import Login from "./Pages/Logins/Login/Login";
-import Registration from "./Pages/Logins/Registration/Registration";
+import Register from "./Pages/Logins/Register/Register";
 import Services from "./Pages/Services/Services";
 import Footer from "./Shared/Footer/Footer";
 import Header from "./Shared/Header/Header";
@@ -19,11 +20,12 @@ function App() {
         <Route path="/services" element={<Services></Services>}></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
-        <Route path="/login" element={<Login></Login>}></Route>
         <Route
-          path="/registration"
-          element={<Registration></Registration>}
+          path="/service/:serviceId"
+          element={<ServicesDetail></ServicesDetail>}
         ></Route>
+        <Route path="/login" element={<Login></Login>}></Route>
+        <Route path="/register" element={<Register></Register>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
