@@ -1,8 +1,8 @@
 # Dreamy Travels
 
-## [Private Repo Link](https://dreamy-travels-e732d.web.app/)
+## [website Link](https://splendorous-beijinho-fa2070.netlify.app/)
 
-Click here to create private repo: [https://github.com/programming-hero-web-course-4/independent-service-provider-Dip022](https://github.com/programming-hero-web-course-4/independent-service-provider-Dip022)
+code link: [https://github.com/programming-hero-web-course-4/independent-service-provider-Dip022](https://github.com/programming-hero-web-course-4/independent-service-provider-Dip022)
 
 # Website Details
 
