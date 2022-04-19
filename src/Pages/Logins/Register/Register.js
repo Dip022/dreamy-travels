@@ -83,12 +83,12 @@ const Register = () => {
                 required
               />
             </Form.Group>
-            <p>{error?.message}</p>
+            <p className="text-danger">{error?.message}</p>
             <span className="text-danger text-center mt-4 mb-2">
               {passError}
             </span>
             <Button className="w-100" variant="primary" type="submit">
-              Submit
+              Register
             </Button>
           </Form>
 

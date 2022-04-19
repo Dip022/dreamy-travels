@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import banner from "../../images/banner.jpg";
+import Gallery from "../Gallery/Gallery";
 import Services from "../Services/Services";
 import "./Home.css";
 
@@ -12,6 +13,7 @@ const Home = () => {
       </div>
       <Container>
         <Services></Services>
+        <Gallery></Gallery>
       </Container>
     </div>
   );

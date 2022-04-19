@@ -71,7 +71,7 @@ const Login = () => {
           </Form.Group>
           <p className="text-danger">{error?.message}</p>
           <Button className="w-100" variant="primary" type="submit">
-            Submit
+            Login
           </Button>
         </Form>
 
